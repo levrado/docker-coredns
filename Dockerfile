@@ -1,5 +1,7 @@
+# Originally taken from Yorick Poels's dockerfile [yorickps/docker-coredns]
+# Adding a default config with health plugin, and removing volumization
 FROM alpine:3.7
-LABEL maintainer="Yorick Poels <yorick.poels@gmail.com>"
+LABEL maintainer="Lev Radomislensky <lev.radomislensky@gmail.com"
 
 ENV COREDNS_VERSION=1.0.6
 
