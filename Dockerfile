@@ -18,7 +18,7 @@ RUN curl --silent --show-error --fail --location \
 
 EXPOSE 53 53/udp
 
-VOLUME ["/etc/coredns/"]
+COPY ./config/Corefile-proxy-example /etc/coredns/Corefile
 
 ENTRYPOINT ["dumb-init"]
 
